@@ -37,9 +37,8 @@ The complete dataset used in this analysis is available via Google Drive:
 **Dataset Link**: [https://drive.google.com/drive/folders/1a4euIDKiMGjl0C1NIjEdgRd4FXbBhLuu?usp=sharing](https://drive.google.com/drive/folders/1a4euIDKiMGjl0C1NIjEdgRd4FXbBhLuu?usp=sharing)
 
 This shared folder contains:
-- **GNSS Station Data**: Daily .Cmn files from nine mid-latitude GNSS stations
-- **OMNI Parameters**: Complete solar wind and geomagnetic index datasets
-- **Processed Data**: Intermediate processing files and quality-controlled datasets
+- **GNSS Station DATA**: Daily .Cmn files from nine mid-latitude GNSS stations
+- **RAW Station DATA**: Contains raw data downloaded from UNAVCO
 
 **Note**: Download the data folder and place it in your local repository directory to run the analysis notebooks.
 
