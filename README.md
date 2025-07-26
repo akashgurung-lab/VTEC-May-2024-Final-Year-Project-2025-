@@ -1,10 +1,12 @@
-# A Study of Mid-Latitude Ionospheric VTEC Response to the Severe Geomagnetic Storm of May 2024
+# 🛰️ A Study of Mid-Latitude Ionospheric VTEC Response to the Severe Geomagnetic Storm of May 2024
 
-## Abstract
+## 📜 Abstract
 
 This repository contains the complete analytical framework and thesis documentation for investigating the mid-latitude ionospheric response to the severe geomagnetic storm of May 10-12, 2024, using Vertical Total Electron Content (VTEC) data derived from a global network of nine ground-based GNSS stations. An analysis comparing VTEC variations during the storm with a baseline established from geomagnetically quiet days (May 7-9) is presented, and the ionospheric response is correlated with interplanetary data from the OMNIWeb service.
 
 The storm was characterized by a sustained period of southward IMF Bz and a minimum SYM-H index of -497 nT, classifying it as a severe event. A major positive ionospheric storm was observed on a global scale, with the normal diurnal VTEC pattern being completely disrupted. During the storm's main phase, VTEC values showed a dramatic enhancement, with peaks at some stations exceeding 120 TECU, representing an increase of over 100% compared to the quiet day baseline.
+
+**Note**: This repository serves as the computational component of the corresponding Bachelor's project work. For detailed theoretical background, methodology, and comprehensive analysis, please refer to the complete project paper, **[available here](https://drive.google.com/file/d/15atNYLF-9NCdUYBem1RGAXQNlZ2y193W/view?usp=drive_link)**.
 
 **Key Findings:**
 - **Strong Local Time Dependence**: Stations on the dayside during the storm's onset exhibited prompt and intense VTEC enhancement consistent with Prompt Penetration Electric Fields (PPEFs), while stations on the nightside showed a more gradual and delayed response characteristic of the Disturbance Dynamo effect
@@ -12,11 +14,11 @@ The storm was characterized by a sustained period of southward IMF Bz and a mini
 - **Global Scale Response**: Complete disruption of normal diurnal VTEC patterns across the mid-latitude network
 - **Cause-and-Effect Relationships**: Comprehensive characterization of solar wind drivers and the complex, geographically dependent response of the mid-latitude ionosphere
 
-**Note**: This repository serves as the computational component of the corresponding thesis work. For detailed theoretical background, methodology, and comprehensive analysis, please refer to the complete thesis document.
+**Note**: This repository serves as the computational component of the corresponding Bachelor's project work. For detailed theoretical background, methodology, and comprehensive analysis, please refer to the complete thesis document.
 
 **Keywords**: VTEC, Geomagnetic Storm, Ionosphere, Prompt Penetration Electric Fields, Disturbance Dynamo Electric Fields
 
-## Scientific Motivation
+## 🔬 Scientific Motivation
 
 The May 2024 geomagnetic storm represents a unique opportunity to study extreme space weather impacts on the Earth's ionosphere. This event provides critical insights into:
 
@@ -25,14 +27,14 @@ The May 2024 geomagnetic storm represents a unique opportunity to study extreme 
 - Temporal evolution of storm-induced electric field penetration
 - Regional variations in ionospheric disturbance patterns
 
-## Methodology
+## 🛠️ Methodology
 
 ### Data Sources
-- **GNSS Observations**: Multi-station VTEC data processed using the GOPI SEEMALA GPS-TEC analysis program
+- **GNSS Observations**: Raw RINEX data from global IGS stations, accessed via the UNAVCO public data archives.
 - **Solar Wind Parameters**: OMNI dataset (`Data/OMNI_PARAMETERS/solar_parameters.txt`) including IMF Bz, solar wind velocity (Vsw), dynamic pressure (Psw), proton density (Np), and temperature (T)
 - **Geomagnetic Indices**: SYM-H index (`Data/OMNI_PARAMETERS/SYM-H.txt`) for storm intensity characterization
 
-### Data Access
+### ☁️ Data Access
 The complete dataset used in this analysis is available via Google Drive:
 **Dataset Link**: [https://drive.google.com/drive/folders/1a4euIDKiMGjl0C1NIjEdgRd4FXbBhLuu?usp=sharing](https://drive.google.com/drive/folders/1a4euIDKiMGjl0C1NIjEdgRd4FXbBhLuu?usp=sharing)
 
@@ -48,7 +50,7 @@ This shared folder contains:
 3. **Disturbance Quantification**: Percentage deviation analysis (dTEC) relative to quiet-day baseline with interactive plots
 4. **Correlation Analysis**: Statistical assessment of ionospheric response to solar wind drivers (IMF Bz, Vsw, Psw, Np, T) and geomagnetic indices using pandas and numpy
 
-## Repository Structure
+## 📁 Repository Structure
 
 ```
 ├── Code/
@@ -71,15 +73,11 @@ This shared folder contains:
 │   ├── vtec_plot_for_quiet_days.pdf          # Baseline VTEC behavior
 │   ├── vtec_plot_for_recovery.pdf            # Recovery phase VTEC
 │   └── vtec_plot_for_storm_day.pdf           # Storm phase VTEC
-├── thesis/                     # Thesis documentation
-│   ├── thesis.pdf              # Complete thesis document
-│   ├── figures/                # High-resolution figures for thesis
-│   └── references.bib          # Bibliography and citations
 ├── requirements.txt            # Python dependencies
 └── README.md
 ```
 
-## Technical Requirements
+## ⚙️ Technical Requirements
 
 ### Dependencies
 ```python
@@ -106,13 +104,12 @@ pip install -r requirements.txt
 
 **Important**: Ensure all data file paths in the notebooks correspond to your local data organization before running the analysis.
 
-## Data Format Specifications
+## 📄 Data Format Specifications
 
 ### GNSS Data (.Cmn format)
 Generated by GOPI SEEMALA GPS-TEC analysis program from RINEX files:
 - Temporal resolution: 30-second intervals
 - Parameters: Slant TEC, elevation angle, azimuth, satellite PRN
-- Quality flags and cycle slip detection included
 - **Access**: Available via the Google Drive dataset link above
 - **Format**: Daily files organized by station and date
 
@@ -125,7 +122,7 @@ OMNI high-resolution dataset parameters:
 - **T**: Solar wind temperature (K)
 - **SYM-H**: Storm-time geomagnetic index (nT)
 
-## Analysis Workflow
+## 🗺️ Analysis Workflow
 
 The analysis is conducted through a series of Jupyter notebooks organized by functionality. Execute the notebooks based on your specific analysis requirements.
 
@@ -168,9 +165,7 @@ jupyter notebook Code/dTEC_VARIATION.ipynb
 ```
 Calculates percentage VTEC deviations and generates comprehensive multi-station disturbance analysis. Generates `corrected_dTEC_variation_15min.pdf`.
 
-## Scientific Results
-
-### Scientific Results
+## 📈 Scientific Results
 
 ### Storm Characteristics
 - **IMF Conditions**: Sustained period of southward IMF Bz driving magnetospheric coupling
@@ -189,14 +184,13 @@ Calculates percentage VTEC deviations and generates comprehensive multi-station 
 - **Impact Assessment**: Long-lasting effects highlighting the significant energy input from the storm
 - **Geographic Variations**: Complex, location-dependent recovery patterns across the global network
 
-## Documentation and Thesis
+## 🎓 Documentation and Thesis
 
 This repository accompanies the comprehensive thesis: **"A Study of Mid-Latitude Ionospheric VTEC Response to the Severe Geomagnetic Storm of May 2024"**
 
-### Thesis Components
-- **Complete Thesis**: Available in `thesis/thesis.pdf` with detailed theoretical framework, literature review, methodology, results, and conclusions
-- **Figures**: High-resolution publication-quality figures located in `thesis/figures/`
-- **Bibliography**: Complete reference list in `thesis/references.bib`
+The complete project paper, including detailed analysis and discussion, can be accessed directly via the link below.
+
+➡️ **[View the Full Project Paper on Google Drive (PDF)](https://drive.google.com/file/d/15atNYLF-9NCdUYBem1RGAXQNlZ2y193W/view?usp=drive_link)**
 
 ### Repository Purpose
 This computational repository provides:
@@ -207,7 +201,7 @@ This computational repository provides:
 
 The notebooks in this repository generate the figures and results presented in the thesis, ensuring full reproducibility of the research findings.
 
-## Contributing to the Scientific Community
+## 🤝 Contributing to the Scientific Community
 
 We encourage contributions from the space weather research community:
 
@@ -241,7 +235,7 @@ We encourage contributions from the space weather research community:
 4. Add unit tests for new functionality
 5. Submit pull request with detailed description
 
-## Citation
+## 📝 Citation
 
 If you use this code, methodology, or findings in your research, please cite the thesis:
 
@@ -252,26 +246,23 @@ If you use this code, methodology, or findings in your research, please cite the
   year={2024},
   school={[St. Xavier's College, Kathmandu]},
   type={Bachelor's Project Work (TU)},
-  url={https://github.com/akashgurung-lab/VTEC-May-2024-Final-Year-Project-2025-}
+  url={https://drive.google.com/file/d/15atNYLF-9NCdUYBem1RGAXQNlZ2y193W/view?usp=drive_link}
 }
 ```
 
 ### Related Publications
 If this work leads to journal publications, they will be listed here with appropriate citation information.
 
-## Acknowledgments
+## 🙏 Acknowledgments
 
 This research was made possible through:
+- **UNAVCO**: For providing public access to the raw GNSS RINEX observation data used in this study.
 - **GOPI SEEMALA GPS-TEC Analysis Program**: RINEX to TEC processing capabilities
 - **NASA OMNIWeb Service**: Solar wind and geomagnetic data provision
 - **International GNSS Service (IGS)**: Global network maintenance and data distribution
 - **Space Weather Research Community**: Ongoing collaboration and data sharing initiatives
 
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## Contact Information
+## 📧 Contact Information
 
 **Principal Investigator**: Akash Gurung  
 **Institution**: [St. Xavier's College, Kathmandu]  
