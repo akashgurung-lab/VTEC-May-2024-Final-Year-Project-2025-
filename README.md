@@ -237,14 +237,14 @@ We encourage contributions from the space weather research community:
 
 ## 📝 Citation
 
-If you use this code, methodology, or findings in your research, please cite the thesis:
+If you use this code, methodology, or findings in your research, please cite the project report:
 
 ```bibtex
-@mastersthesis{gurung2024vtec,
+@techreport{gurung2024vtec,
   title={A Study of Mid-Latitude Ionospheric VTEC Response to the Severe Geomagnetic Storm of May 2024},
   author={Gurung, Akash},
   year={2024},
-  school={[St. Xavier's College, Kathmandu]},
+  institution={[St. Xavier's College, Kathmandu]},
   type={Bachelor's Project Work (TU)},
   url={https://drive.google.com/file/d/15atNYLF-9NCdUYBem1RGAXQNlZ2y193W/view?usp=drive_link}
 }
